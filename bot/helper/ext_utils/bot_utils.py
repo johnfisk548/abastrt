@@ -159,7 +159,7 @@ def get_readable_message():
             else:
                 msg += f"\n<b>Size: </b>{download.size()}"
             msg += f"\n<b>To Cancel:</b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
-            msg += "\n_______________________________"
+            msg += "\n_______________________________\n"
             if STATUS_LIMIT is not None and index == STATUS_LIMIT:
                 break
         if len(msg) == 0:
